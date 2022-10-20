@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url("../img/painelMercedes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    height: 8vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+section h1{
+    position: absolute;
+    top:25%;
+    left: 35%;
+    font-family: 'Hanuman';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 66px;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+
+
+}
+
+section h2{
+    position: absolute;
+    display: flex;
+    font-family: 'Hanuman';
+    width: 90vh;
+    top:35%;
+    left: 30%;
+    font-style: italic;
+    font-size: 50px;
+    line-height: 90px;
+    align-items: flex-start;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width:30px;
+    height: 3px;
+    background: #000000;
+    margin: 5px;
+}
+
+@media (max-width: 999px){
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right:0;
+        width: 50vw;
+        height: 92vh;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        z-index: 3;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: rotateX(0);
+    }
+
+    section h1{
+        position: absolute;
+        top:25%;
+        left: 23%;
+    }
+
+    section h2{
+        position: absolute;
+        display: flex;
+        width: 100vh;
+        top:35%;
+        left: 20%;
+    }
+
+    body{
+        background-size: cover;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+   
+}
+
+@media (max-width:750px) {
+    section h1{
+        position: absolute;
+        font-size: 20px;
+        top:25%;
+        left: 20%;
+    }
+
+    section h2{
+        position: absolute;
+        
+        font-size: 45px;
+        display: flex;
+        width: 90vh;
+        top:35%;
+        left: 15%;
+    }
+
+    
+}
+
+@media (max-width: 620px){
+
+    section h1{
+        position: absolute;
+        font-size: 18px;
+
+        top:25%;
+        left: 15%;
+    }
+
+    section h2{
+        position: absolute;
+        font-size: 35px;
+        display: flex;
+        width: 90vh;
+        top:35%;
+        left: 7%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
