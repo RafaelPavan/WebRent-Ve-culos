@@ -11,6 +11,8 @@ body{
     background-size: cover;
 }
 
+/* Header */
+
 a{
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -46,6 +48,8 @@ nav{
     margin-left: 32px;
 }
 
+/* Texto Bem-vindos ao WebRent Veículos */
+
 section h1{
     position: absolute;
     top:25%;
@@ -60,6 +64,8 @@ section h1{
 
 
 }
+
+/* Texto Excelência e comodidade para seu transporte privado*/
 
 section h2{
     position: absolute;
@@ -77,6 +83,9 @@ section h2{
     color: #FFFFFF;
 
 }
+
+/* Menu Hamburguer */
+
 .mobile-menu{
     display: none;
     cursor: pointer;
