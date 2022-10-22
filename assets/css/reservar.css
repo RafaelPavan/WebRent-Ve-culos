@@ -60,8 +60,8 @@ nav{
 section h1{
     /* Catálogo de Veículos disponíveis para locação */
 
-    text-align: center;
-    padding: 30px;
+    margin-left: 8%;
+    padding-top: 40px;
     font-family: 'Hanuman';
     font-style: normal;
     font-weight: 400;
@@ -81,8 +81,32 @@ section h1{
 }
 
 .card-item{
-    width: 300px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    /* box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7); */
+}
+
+.card-item img{
+    width: 80%;
+    padding: 15px;
+}
+
+.card-content p{
+    display: flex;
+    padding: 5px;
+    margin-left: 35px;
+    font-size: 25px;
+}
+
+/*Tabela de preços*/
+
+.card-item-tabela{
+    width: 450px;
+    
     margin: 25px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -90,63 +114,64 @@ section h1{
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7);
 }
 
-.card-item h1{
-    
-    padding: 5px;
-    text-align: center;
+.tabelaH1{
+    margin-left: 145px;
 }
 
-.card-item img{
+    /*Radio button*/
+
+.card-content-radio{
     
-    width: 100%;
+    font-size: 25px;
+}
+
+/* input[type=radio]{
+    align-items: center;
+    width: 20px;
+    height: 2em; 
+} */
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+    margin: 15px;
+}
+
+.card-content-radio button{
+    /* left: 15px; */
+    width: 200px;
+    align-items: center;
+    padding: 15px ;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding: 15px;
-}
-
-.card-content{
-    
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.card-item h2{
-    margin-top: 10px;
-}
-
-.card-item button{
-    width: 70%;
-    align-items: center;
-    margin-bottom: 50px;
-    padding: 15px 0;
     border-radius: 5px;
     border: none;
     background-color: rgba(28, 43, 178, 1);
-    color:#fff;
+    
     font-size: 20px;
     font-family: Hanuman;
     cursor: pointer;
     transition: 0.3s ease-out;
 }
 
-.card-item button a{
+.card-content-radio button a{
     color: rgb(255, 255, 255);
     
 }
 
-.card-item button:hover a{
+.card-content-radio button:hover a{
     color: rgba(28, 43, 178, 1);
     font-weight: bold;
     
 }
 
-.card-item button:hover{
+.card-content-radio button:hover{
     background:#dedede;
     color: rgba(28, 43, 178, 1);
     font-weight: bold;
 }
-
 
 @media (max-width: 999px){
     .nav-list{
