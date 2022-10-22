@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Header */
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    height: 8vh;
+    border-bottom: 1px solid #000000;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/*Menu hamburguer*/
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width:30px;
+    height: 3px;
+    background: #000000;
+    margin: 5px;
+}
+
+/*Cards*/
+section h1{
+    /* Catálogo de Veículos disponíveis para locação */
+
+    text-align: center;
+    padding: 30px;
+    font-family: 'Hanuman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 59px;
+    /* identical to box height */
+
+    color: #000000;
+
+
+}
+.container-all{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-item{
+    width: 300px;
+    height: 400px;
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.7);
+}
+
+.card-item h1{
+    
+    padding: 5px;
+    text-align: center;
+}
+
+.card-item img{
+    
+    width: 100%;
+    padding: 15px;
+}
+
+.card-content{
+    
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-item h2{
+    margin-top: 10px;
+}
+
+.card-item button{
+    width: 70%;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(28, 43, 178, 1);
+    color:#fff;
+    font-size: 20px;
+    font-family: Hanuman;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.card-item button a{
+    color: rgb(255, 255, 255);
+    
+}
+
+.card-item button:hover a{
+    color: rgba(28, 43, 178, 1);
+    font-weight: bold;
+    
+}
+
+.card-item button:hover{
+    background:#dedede;
+    color: rgba(28, 43, 178, 1);
+    font-weight: bold;
+}
+
+
+@media (max-width: 999px){
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right:0;
+        width: 50vw;
+        height: 92vh;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        z-index: 3;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: rotateX(0);
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    
+    
+
+
+}
