@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Header */
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    height: 8vh;
+    border-bottom: 1px solid #000000;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    /* max-width: 100%; */
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card{
+    width: 30%;
+    position: fixed;
+    
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+
+.label-float input {
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #3b3a3a50;
+}
+
+.label-float label{
+    color:#343434;
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+}
+
+button{
+    background-color: black;
+    color: #fff;
+    padding: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline:none;
+}
+
+button:hover{
+    background-color: #3f3f3f;
+    border-color: transparent;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    color: #000;
+}
+
+/*Menu hamburguer*/
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width:30px;
+    height: 3px;
+    background: #000000;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 999px){
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right:0;
+        width: 50vw;
+        height: 92vh;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        z-index: 3;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    .nav-list.active{
+        transform: rotateX(0);
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    .card{
+        padding: 30px;
+        width: 45%;
+        
+    }
+}
+
+@media (max-width: 600px){
+    .card{
+        padding: 30px;
+        width: 40%;
+        border-radius: 15px;
+    }
+
+    .card{
+        padding: 30px;
+        width: 50%;
+        border-radius: 15px;
+    }
+
+    h1{
+        letter-spacing: 5px;
+    }
+}
