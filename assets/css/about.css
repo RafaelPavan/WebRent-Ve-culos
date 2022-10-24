@@ -45,8 +45,6 @@ nav{
 
 /* Texto H1*/
 section h1{
-    /* Sobre WebRent Veículos */
-
     position: absolute;
     height: 94px;
     left: 5%;
@@ -61,8 +59,6 @@ section h1{
 }
 
 section p{
-    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non ullamcorper augue. Aenean congue lobortis orci, vitae egestas nisi faucibus nec. Donec tristique nisl nec sapien tincidunt, nec convallis lorem semper. Proin elementum nunc diam. Mauris placerat leo tortor, in suscipit est varius vitae. Nam non scelerisque urna. Etiam nec mauris hendrerit justo aliquam ultricies sed id eros. */
-    
     position: absolute;
     width: 40vw;
     left: 5%;
@@ -75,16 +71,10 @@ section p{
     color: #000000;
     text-align: justify ;
     
-    /* margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; */
 
 }
 
 section img{
-    /* pexels-photo-3767206 1 */
-
     position: absolute;
     width: 310px;
     height: 490px;
@@ -103,6 +93,10 @@ section img{
     height: 3px;
     background: #000000;
     margin: 5px;
+}
+
+[id=contact]{
+    cursor: pointer;
 }
 
 /*Responsividade*/
