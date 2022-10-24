@@ -147,6 +147,9 @@ section h1{
     font-weight: bold;
 }
 
+[id=contact]{
+    cursor: pointer;
+}
 
 @media (max-width: 999px){
     .nav-list{
